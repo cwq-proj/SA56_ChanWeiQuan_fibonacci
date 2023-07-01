@@ -1,0 +1,17 @@
+version: '3.9'
+services:
+  dropwizard:
+    build:
+      context: ./backend-dropwizard
+      dockerfile: Dockerfile
+    container_name: dropwizard-container
+    ports:
+      - '8080:8080'
+
+  react:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: react-container
+    ports:
+      - '3000:3000'
