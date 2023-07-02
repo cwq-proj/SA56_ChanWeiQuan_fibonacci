@@ -56,11 +56,6 @@ CLI commands to build docker images
 2. Build the docker image: docker build -t your-dockerhub-username/your-image-name .
 3. Check image is built: docker images
 
-To push to dockerhub
-1. Login: docker login
-2. Tag the image: docker tag <image-id> <your-dockerhub-username>/<image-name>:<tag-name>
-3. Push to dockerhub: docker push <your-dockerhub-username>/<image-name>:<tag-name>
-
 ## Technologies Used
 1. Install packages: npm install
 2. Run the application: npm start
