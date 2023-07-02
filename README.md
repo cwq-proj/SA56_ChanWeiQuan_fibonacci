@@ -38,12 +38,12 @@ Make sure you have the following installed on your machine:
 
 4. Build and deploy the application on the cloud using Docker Compose. Make sure you have a cloud provider set up and configured, I have used aws ec2 for this.
 
-5. Once the deployment is complete, you can access the application. I have deployed mine using the following link: http://18.142.55.20:3000/.
+5. Once the deployment is complete, you can access the application. I have deployed mine using the following link: http://18.142.55.20:3000/
 
 #### To run Dropwizard separately
 CLI commands to run dropwizard separately.
 1. Clean package: mvn clean package
-2. Run applciation: java -jar target/backend-dropwizard-1.0-SNAPSHOT.jar server config.yml
+2. Run application: java -jar target/backend-dropwizard-1.0-SNAPSHOT.jar server config.yml
 
 #### To run React separately
 CLI commands to run react
@@ -63,4 +63,3 @@ CLI commands to build docker images
 - React: JavaScript library for building user interfaces
 - Dropwizard: Java framework for developing RESTful web services
 - Docker: Containerization platform for deploying applications
-
