@@ -32,9 +32,12 @@ const Form = () => {
         }
     };
 
-    // sends elements to the server side and generates the fibonacci sequences
     const sendElements = () => {
-        fetch(`http://localhost:8080/fibonacci?elements=${elements}`)
+        // get url
+        const url = new URL(window.location.origin);
+        const apiUrl = url.protocol + '//' + url.hostname + ":8080";
+
+        fetch(`${apiUrl}/fibonacci?elements=${elements}`)
             .then((res) => res.json())
             .then((data) => {
                 setFibonacciData(data);
