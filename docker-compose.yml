@@ -10,4 +10,4 @@ services:
     container_name: react-container
     ports:
       - '3000:3000'
-    image: qw28394/fibonacci:frontend
+    image: qw28394/fibonacci:latest
