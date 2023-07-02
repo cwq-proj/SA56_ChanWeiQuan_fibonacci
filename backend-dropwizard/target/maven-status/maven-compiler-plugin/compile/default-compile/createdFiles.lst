@@ -1,5 +1,4 @@
 sg/nus/iss/resources/FibonacciResource.class
-sg/nus/iss/resources/RequestBody.class
 sg/nus/iss/api/FibonacciRequest.class
 sg/nus/iss/FibonacciApplication.class
 sg/nus/iss/api/FibonacciResponse.class

@@ -40,8 +40,30 @@ Make sure you have the following installed on your machine:
 
 5. Once the deployment is complete, you can access the application. I have deployed mine using the following link: http://18.142.55.20:3000/.
 
+#### To run Dropwizard separately
+CLI commands to run dropwizard separately.
+1. Clean package: mvn clean package
+2. Run applciation: java -jar target/backend-dropwizard-1.0-SNAPSHOT.jar server config.yml
+
+#### To run React separately
+CLI commands to run react
+1. Install packages: npm install
+2. Run the application: npm start
+
+#### To build docker images for Dropwizard/React individually
+CLI commands to build docker images
+1. Navigate into project directory (note this is the directory for dropwizard/react)
+2. Build the docker image: docker build -t your-dockerhub-username/your-image-name .
+3. Check image is built: docker images
+
+To push to dockerhub
+1. Login: docker login
+2. Tag the image: docker tag <image-id> <your-dockerhub-username>/<image-name>:<tag-name>
+3. Push to dockerhub: docker push <your-dockerhub-username>/<image-name>:<tag-name>
 
 ## Technologies Used
+1. Install packages: npm install
+2. Run the application: npm start
 
 - React: JavaScript library for building user interfaces
 - Dropwizard: Java framework for developing RESTful web services
